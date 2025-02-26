@@ -1,0 +1,41 @@
+.nav_bar {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    .nav__info {
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: $grey__bc__color;
+            font-size: 12px;
+            font-weight: 700;
+            width: 130px;
+        }
+        img {
+            visibility: hidden;
+        }
+    }
+}
+
+.nav__info a:hover {
+    color: $button__hover__color;
+}
+
+.nav__info a:active {
+    color: $button__disablet__color;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .nav__info  {
+        img {
+            visibility: visible !important;
+        }
+        a {
+            display: none;
+            width: 0px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.unc__section .container{
+    margin-top: 250px;
+    padding: 60px;
+    display: flex;
+    gap: 125px;
+    background-color: $footer__bc__color;
+    border-radius: 10px;
+    h3 {
+        font-family: $font__family__main;
+        color: $all__bc__color;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    p {
+        margin-top: 32px;
+        color: $all__bc__color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        opacity: 0.8;
+    }
+    img {
+        margin-top: -150px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .unc__section .container{
+        text-align: center;
+        margin-top: 120px;
+        padding: 160px 20px 20px 20px;
+        flex-direction: column;
+        gap: 25px;
+        h3 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 15px;
+        }
+        .unc_img {
+            margin-top: -120px;
+            img {
+                height: 120px;
+                object-fit: cover;
+                object-position:  bottom;
+                width: 100%;
+                image-rendering: auto;
+            }
+        }
+    }
+}

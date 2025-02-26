@@ -1,0 +1,156 @@
+.how__drink__section .container {
+    
+    margin-top: 160px;
+    display: flex;
+    .preferences {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .line__div {
+        background-color: $grey__bc__color;
+        width: 255px;
+        height: 1px;
+        margin: 10px 0;
+    }
+}
+
+.preferences .preferences__alonge{
+    display: flex;
+    gap: 20px;
+    p {
+        color: $main__bc__color;
+        opacity: 0.8;
+        font-weight: 800;
+        font-family: $font__family__main;
+        font-size: 24px;
+    }
+}
+
+.how__drink__cards {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    .hov__ques__ques{
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            font-family: $font__family__main;
+            font-size: 40px;
+            font-weight: 800;
+            color: $grey__bc__color;
+        }
+    }
+}
+
+.how__ques__cards {
+    margin: 66px 0 88px 0;
+    display: flex;
+    gap: 23px;
+    .how__ques__card {
+        padding: 32px 28px 32px 28px;
+        background-color: $bacground_defauld_card;
+        border-radius: 8px;
+        h3 {
+            font-size: 24px;
+            color: $main__bc__color;
+            font-family: $font__family__main;
+            font-weight: 800;
+        }
+        p {
+            font-family: $font__family__secondary;
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey__bc__color;
+            opacity: 0.8;
+            margin-top: 25px;
+            line-height: 26px;
+        }
+    }
+}
+
+.how__drink__section .how__drink__order {
+    background-color: $footer__bc__color;
+    padding: 27px 64px;
+    h3 {
+        font-family: $font__family__secondary;
+        font-size: 16px;
+        font-weight: 400;
+        color: $grey__bc__color;
+        opacity: 0.8;
+    }
+    h2 {
+        margin-top: 20px;
+        line-height: 40px;
+        font-size: 24px;
+        font-weight: 800;
+        color: $all__bc__color;
+        font-family: $font__family__main;
+        span {
+            color: $button__defauld__color;
+        }
+    }
+}
+.button_div__sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.how__ques__card:hover {
+    background-color: $bc__hover__color;
+}
+.how__ques__card:active {
+    background-color: $bc__active__color;
+    h3 {
+        color: $all__bc__color;
+    }
+    p {
+        color: $all__bc__color;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .how__drink__section .container {
+    .preferences {
+        display: none;
+    }
+    .line__div {
+        display: none;
+    }
+}
+
+.how__drink__cards {
+    width: 100%;
+    .hov__ques__ques{
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            font-family: $font__family__main;
+            font-size: 24px;
+            font-weight: 800;
+            color: $grey__bc__color;
+        }
+    }
+}
+
+.how__ques__cards {
+    margin: 66px 0 88px 0;
+    flex-direction: column;
+}
+
+.how__drink__section .how__drink__order {
+    padding: 25px 30px;
+    }
+.button_div__sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+}

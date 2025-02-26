@@ -1,0 +1,51 @@
+.commitment__section .container{
+    align-items: center;
+    display: flex;
+    gap: 125px;
+    padding: 0 0px;
+    margin-top: 150px;
+}
+.commitment__img {
+    margin-left: 168px;
+}
+.commitment__info {
+    h3 {
+        font-family: $font__family__main;
+        color: $main__bc__color;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    p {
+        margin-top: 42px;
+        color: $main__bc__color;
+        line-height: 26px;
+        font-weight: 400;
+        font-family: $font__family__secondary;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .commitment__section .container{
+        text-align: center;
+        flex-direction: column;
+        gap: 25px;
+        margin: 120px auto 0 auto;
+        padding: 0;
+        .commitment__img img{
+            width: 96%;
+        }
+    }
+    
+    .commitment__img {
+        margin-left: 0;
+    }
+    
+    .commitment__info {
+        h3 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.header__title {
+    margin-top: 48px;
+    background-image: url(../img/in.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 117px 84px;
+    h2 {
+        color: $all__bc__color;
+        font-size: 72px;
+        font-family: $font__family__main;
+    }
+    p{
+        color: $all__bc__color;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        width: 50%;
+        margin-top: 32px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header__title {
+        text-align: center;
+        background-position: 50% 0px;
+        padding: 100px 40px;
+        h2{
+            font-size: 40px;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

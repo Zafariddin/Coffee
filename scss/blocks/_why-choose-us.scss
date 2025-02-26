@@ -1,0 +1,68 @@
+.why__section {
+    .container {
+        background-color: #2C343E;
+        border-radius: 10px;
+        height: 577px;
+        padding: 100px 85px;
+        text-align: center;
+        .why__title {
+            h2{
+                color: $all__bc__color;
+                font-size: 40px;
+                font-weight: 800;
+                font-family: $font__family__main;
+                line-height: 48px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: $all__bc__color;
+                line-height: 26px;
+                margin: 32px auto auto auto;
+            }
+        }
+        .why__cards {
+            margin-top: 86px;
+            display: flex;
+            gap: 30px;
+        }
+
+    }
+}
+
+.why__card {
+    background-color: $secondary__bc__color;
+    padding: 72px 47px 47px 47px;
+    border-radius: 8px;
+    h3  {
+        color: $all__bc__color;
+        font-family: $font__family__main;
+        font-weight: 800;
+        font-size: 22px;
+        margin-top: 56px;
+    }
+    p {
+        color: $all__bc__color;
+        font-weight: 300;
+        font-family: $font__family__main;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 24px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .why__section {
+        .container {
+            padding: 20px 65px;
+            .why__cards {
+                flex-direction: column;
+            }
+        }
+    }
+    .why__card {
+        padding: 65px 30px 30px 30px;
+
+    }
+}

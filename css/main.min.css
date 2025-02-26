@@ -1,0 +1,758 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #05000B;
+}
+
+body {
+  background-color: #FEFCF7;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1190px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.active {
+  opacity: 1;
+}
+
+.opacity {
+  opacity: 0.7;
+}
+
+.button__green {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #0E8784;
+  border: none;
+  border-radius: 6px;
+}
+.button__green a {
+  font-family: "Fraunces", sans-serif;
+  font-size: 18px;
+  color: #FEFCF7;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.button__green:hover {
+  background-color: #66D2CF;
+}
+
+.button__green:active {
+  background-color: #E2DEDB;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 0 5px;
+  }
+}
+.header__title {
+  margin-top: 48px;
+  background-image: url(../img/in.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 117px 84px;
+}
+.header__title h2 {
+  color: #FEFCF7;
+  font-size: 72px;
+  font-family: "Fraunces", sans-serif;
+}
+.header__title p {
+  color: #FEFCF7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 50%;
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__title {
+    text-align: center;
+    background-position: 50% 0px;
+    padding: 100px 40px;
+  }
+  .header__title h2 {
+    font-size: 40px;
+  }
+  .header__title p {
+    width: 100%;
+    text-align: center;
+  }
+}
+.nav_bar {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+.nav_bar .nav__info {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_bar .nav__info a {
+  color: #83888F;
+  font-size: 12px;
+  font-weight: 700;
+  width: 130px;
+}
+.nav_bar .nav__info img {
+  visibility: hidden;
+}
+
+.nav__info a:hover {
+  color: #66D2CF;
+}
+
+.nav__info a:active {
+  color: #E2DEDB;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav__info img {
+    visibility: visible !important;
+  }
+  .nav__info a {
+    display: none;
+    width: 0px;
+  }
+}
+.cards__section .our__collaction {
+  display: none;
+  width: 286px;
+  text-align: center;
+}
+.cards__section .cards__section__cards {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+.cards__section .cards__section__cards .card {
+  text-align: center;
+  margin-top: 262px;
+}
+.cards__section .cards__section__cards .card h3 {
+  margin-top: 70px;
+  font-family: "Fraunces", sans-serif;
+  color: #333D4B;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 900;
+}
+.cards__section .cards__section__cards .card p {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 26px;
+  color: #333D4B;
+}
+.cards__section .cards__bc img {
+  z-index: 1;
+  margin-top: -530px;
+  margin-bottom: 530px;
+}
+
+@media only screen and (max-width: 767px) {
+  .cards__section {
+    margin: 50px auto;
+  }
+  .cards__section .our__collaction {
+    display: block;
+    width: 286px;
+    margin: 0 auto;
+  }
+  .cards__section .cards__section__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards__section .cards__section__cards .card {
+    margin-top: 15px;
+    width: 80%;
+  }
+  .cards__section .cards__bc img {
+    display: none;
+  }
+}
+.why__section .container {
+  background-color: #2C343E;
+  border-radius: 10px;
+  height: 577px;
+  padding: 100px 85px;
+  text-align: center;
+}
+.why__section .container .why__title h2 {
+  color: #FEFCF7;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Fraunces", sans-serif;
+  line-height: 48px;
+}
+.why__section .container .why__title p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #FEFCF7;
+  line-height: 26px;
+  margin: 32px auto auto auto;
+}
+.why__section .container .why__cards {
+  margin-top: 86px;
+  display: flex;
+  gap: 30px;
+}
+
+.why__card {
+  background-color: #0E8784;
+  padding: 72px 47px 47px 47px;
+  border-radius: 8px;
+}
+.why__card h3 {
+  color: #FEFCF7;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  margin-top: 56px;
+}
+.why__card p {
+  color: #FEFCF7;
+  font-weight: 300;
+  font-family: "Fraunces", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .why__section .container {
+    padding: 20px 65px;
+  }
+  .why__section .container .why__cards {
+    flex-direction: column;
+  }
+  .why__card {
+    padding: 65px 30px 30px 30px;
+  }
+}
+.how__section {
+  margin-top: 350px;
+}
+.how__section .container {
+  padding: 0 86px;
+}
+.how__section .container .how__title {
+  color: #83888F;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Fraunces", sans-serif;
+}
+.how__section .container .line {
+  margin-top: 96px;
+}
+.how__section .container .sircles {
+  margin-top: -22px;
+  display: flex;
+  gap: 35%;
+}
+.how__section .button__green {
+  margin-top: 65px;
+}
+
+.how__cards {
+  display: flex;
+  margin-top: 83px;
+  gap: 95px;
+}
+.how__cards h2 {
+  font-family: "Fraunces", sans-serif;
+  color: #FDD6BA;
+  font-size: 72px;
+  font-weight: 800;
+}
+.how__cards h3 {
+  margin-top: 48px;
+  font-size: 32px;
+  color: #333D4B;
+  line-height: 36px;
+  font-family: "Fraunces", sans-serif;
+}
+.how__cards p {
+  margin-top: 48px;
+  color: #83888F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.sub__div .container {
+  margin-top: -170px;
+  background-color: #2C343E;
+  border-radius: 10px;
+  padding: 91px 85px;
+}
+.sub__div .container h3 {
+  color: #FEFCF7;
+}
+
+@media only screen and (max-width: 767px) {
+  .how__section {
+    margin-top: -980px;
+    text-align: center;
+  }
+  .how__section .container {
+    margin-top: 1100px;
+  }
+  .how__section .container .line {
+    display: none;
+  }
+  .how__section .container .sircles {
+    display: none;
+  }
+  .how__section .container h2 {
+    margin-top: 50px;
+  }
+  .how__section .container h3 {
+    margin-top: 15px;
+  }
+  .how__section .container p {
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+  .how__section .button__green {
+    margin-top: 65px;
+  }
+  .sub__div .container {
+    padding: 0 30px;
+  }
+  .how__cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer__section {
+  margin-top: 200px;
+}
+.footer__section .container {
+  background-color: #2C343E;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__section .footer__menyu {
+  display: flex;
+  gap: 25px;
+}
+.footer__section .footer__menyu a {
+  color: #83888F;
+}
+
+.footer__section .footer__media {
+  display: flex;
+  gap: 25px;
+}
+
+.footer__menyu a:hover {
+  color: #66D2CF;
+}
+
+.footer__menyu a:disabled {
+  color: #E2DEDB;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer__section {
+    margin-top: 100px;
+  }
+  .footer__section .container {
+    text-align: center;
+    padding: 35px 25px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__section .footer__menyu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer__section .footer__media {
+    margin: 0 auto;
+  }
+  .footer__menyu a:hover {
+    color: #66D2CF;
+  }
+  .footer__menyu a:disabled {
+    color: #E2DEDB;
+  }
+}
+.header {
+  background-image: url(../img/us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 117px 84px;
+  border-radius: 10px;
+  margin-top: 48px;
+}
+.header h3 {
+  color: #FEFCF7;
+  font-size: 72px;
+  font-family: "Fraunces", sans-serif;
+}
+.header p {
+  color: #FEFCF7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 50%;
+  margin-top: 32px;
+  opacity: 0.8;
+}
+
+.sub__header__bc .header__sub {
+  background-image: url(../img/sub.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 117px 84px;
+  border-radius: 10px;
+  margin-top: 48px;
+}
+.sub__header__bc .header__sub h3 {
+  color: #FEFCF7;
+  font-size: 72px;
+  font-family: "Fraunces", sans-serif;
+}
+.sub__header__bc .header__sub p {
+  color: #FEFCF7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 50%;
+  margin-top: 32px;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 767px) {
+  .sub__header__bc .header__sub {
+    text-align: center;
+    background-position: 50% 0px;
+    padding: 100px 40px;
+  }
+  .sub__header__bc .header__sub h3 {
+    font-size: 40px;
+  }
+  .sub__header__bc .header__sub p {
+    width: 100%;
+    text-align: center;
+  }
+}
+.commitment__section .container {
+  align-items: center;
+  display: flex;
+  gap: 125px;
+  padding: 0 0px;
+  margin-top: 150px;
+}
+
+.commitment__img {
+  margin-left: 168px;
+}
+
+.commitment__info h3 {
+  font-family: "Fraunces", sans-serif;
+  color: #333D4B;
+  font-size: 40px;
+  font-weight: 800;
+}
+.commitment__info p {
+  margin-top: 42px;
+  color: #333D4B;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Barlow", sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  .commitment__section .container {
+    text-align: center;
+    flex-direction: column;
+    gap: 25px;
+    margin: 120px auto 0 auto;
+    padding: 0;
+  }
+  .commitment__section .container .commitment__img img {
+    width: 96%;
+  }
+  .commitment__img {
+    margin-left: 0;
+  }
+  .commitment__info h3 {
+    font-size: 32px;
+  }
+  .commitment__info p {
+    font-size: 15px;
+  }
+}
+.unc__section .container {
+  margin-top: 250px;
+  padding: 60px;
+  display: flex;
+  gap: 125px;
+  background-color: #2C343E;
+  border-radius: 10px;
+}
+.unc__section .container h3 {
+  font-family: "Fraunces", sans-serif;
+  color: #FEFCF7;
+  font-size: 40px;
+  font-weight: 800;
+}
+.unc__section .container p {
+  margin-top: 32px;
+  color: #FEFCF7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.8;
+}
+.unc__section .container img {
+  margin-top: -150px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .unc__section .container {
+    text-align: center;
+    margin-top: 120px;
+    padding: 160px 20px 20px 20px;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .unc__section .container h3 {
+    font-size: 32px;
+  }
+  .unc__section .container p {
+    font-size: 15px;
+  }
+  .unc__section .container .unc_img {
+    margin-top: -120px;
+  }
+  .unc__section .container .unc_img img {
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    width: 100%;
+    image-rendering: auto;
+  }
+}
+.countries__section {
+  margin-top: 168px;
+}
+.countries__section h3 {
+  margin-left: 80px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #83888F;
+}
+.countries__section .country__div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 72px;
+  gap: 65px;
+}
+.countries__section .country__div h3 {
+  margin-left: 0;
+  margin-top: 45px;
+  color: #333D4B;
+}
+.countries__section .country__div .p_div {
+  margin-top: 24px;
+}
+.countries__section .country__div p {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .countries__section {
+    margin-top: 150px;
+  }
+  .countries__section .country__div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .countries__section .country__div .country {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .countries__section .country__div h3 {
+    margin-left: 0;
+    margin-top: 45px;
+  }
+}
+.how__drink__section .container {
+  margin-top: 160px;
+  display: flex;
+}
+.how__drink__section .container .preferences {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.how__drink__section .container .line__div {
+  background-color: #83888F;
+  width: 255px;
+  height: 1px;
+  margin: 10px 0;
+}
+
+.preferences .preferences__alonge {
+  display: flex;
+  gap: 20px;
+}
+.preferences .preferences__alonge p {
+  color: #333D4B;
+  opacity: 0.8;
+  font-weight: 800;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+}
+
+.how__drink__cards {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.how__drink__cards .hov__ques__ques {
+  display: flex;
+  justify-content: space-between;
+}
+.how__drink__cards .hov__ques__ques h3 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #83888F;
+}
+
+.how__ques__cards {
+  margin: 66px 0 88px 0;
+  display: flex;
+  gap: 23px;
+}
+.how__ques__cards .how__ques__card {
+  padding: 32px 28px 32px 28px;
+  background-color: #F4F1EB;
+  border-radius: 8px;
+}
+.how__ques__cards .how__ques__card h3 {
+  font-size: 24px;
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 800;
+}
+.how__ques__cards .how__ques__card p {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #83888F;
+  opacity: 0.8;
+  margin-top: 25px;
+  line-height: 26px;
+}
+
+.how__drink__section .how__drink__order {
+  background-color: #2C343E;
+  padding: 27px 64px;
+}
+.how__drink__section .how__drink__order h3 {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #83888F;
+  opacity: 0.8;
+}
+.how__drink__section .how__drink__order h2 {
+  margin-top: 20px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #FEFCF7;
+  font-family: "Fraunces", sans-serif;
+}
+.how__drink__section .how__drink__order h2 span {
+  color: #0E8784;
+}
+
+.button_div__sub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.how__ques__card:hover {
+  background-color: #FDD6BA;
+}
+
+.how__ques__card:active {
+  background-color: #0E8784;
+}
+.how__ques__card:active h3 {
+  color: #FEFCF7;
+}
+.how__ques__card:active p {
+  color: #FEFCF7;
+}
+
+@media only screen and (max-width: 767px) {
+  .how__drink__section .container .preferences {
+    display: none;
+  }
+  .how__drink__section .container .line__div {
+    display: none;
+  }
+  .how__drink__cards {
+    width: 100%;
+  }
+  .how__drink__cards .hov__ques__ques {
+    display: flex;
+    justify-content: space-between;
+  }
+  .how__drink__cards .hov__ques__ques h3 {
+    font-family: "Fraunces", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #83888F;
+  }
+  .how__ques__cards {
+    margin: 66px 0 88px 0;
+    flex-direction: column;
+  }
+  .how__drink__section .how__drink__order {
+    padding: 25px 30px;
+  }
+  .button_div__sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=main.min.css.map */
